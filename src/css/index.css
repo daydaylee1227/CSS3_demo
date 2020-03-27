@@ -1,0 +1,509 @@
+
+html, body, .section{
+    min-height: 600px;
+    min-width: 1000px;
+}
+/* 8个背景样式 */
+#fp-nav ul li a span{
+    background : #f40 !important;
+}
+/* 第一屏幕  start*/
+.section1{
+    
+    background: #fadd67 url(../images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;
+}
+.fly{
+    position: absolute;
+    right: 20%;
+    top: 10%;
+}
+.shirt01{
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 335px;
+}
+.goes{
+    position: relative;
+    left: 50%;
+    margin-left: -400px;
+    bottom: -100px;
+}
+/* 第一屏幕  end*/
+
+/* 第二屏幕  start*/
+
+.section2{
+    background: #84a2d4 url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+    /* 这个是为了解决这个沙发从第二屏幕到第三屏幕的覆盖问题 */
+    z-index: 2;
+
+    
+}
+.section2 .computer{
+    position: absolute;
+    width: 990px;
+    height: 500px;
+    /* left: 50%;
+    margin-left: -495px; */
+    left: 50%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+.computer .search{
+    position: absolute;
+    bottom: 300px;
+    right: -40px;
+    
+    width: 222px;
+    height: 45px;
+    background: url(../images/search.png);
+    display: none;
+}
+.computer .search .search-words{
+    position: absolute;
+    right: 30px;
+    top: 2px;
+    opacity: 0;
+}
+.computer .search02-1{
+    position: absolute;
+    bottom: 300px;
+    right: 370px;
+    display: none;
+}
+.computer .goods-02{
+    position: absolute;
+    height: 100px;
+    bottom: 217px;
+    right: 270px;
+    /* 需要jquery显示出来 */
+    display: none;           
+
+}
+.section2 .words-01{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 550px;
+}
+.section2 .words-02{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 550px;
+    opacity: 0;
+}
+/* 沙发  作用是完成第三屏幕的效果 */
+.section2 .computer .shirt-02{
+    position: absolute;
+    bottom: 345px;
+    left: 395px;
+    width: 100px;
+    display: none;
+    z-index: 10;
+}
+.section2 .computer .cover{
+    position: absolute;
+    bottom: 334px;
+    right: 495px;
+    width: 104px;
+    height: 90px;
+    z-index: 5;
+    background-color: #fff;
+    display: none;
+}
+/* 第二屏幕  end*/
+
+/* 第三屏幕  start*/
+
+.section3{
+    background: #ef674d;
+    z-index: 1;
+}
+.section3 .main{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background: url(../images/main.png) no-repeat center center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+.section3 .main .select{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    bottom: 0;
+    right: 8px;
+    /* background-color: pink; */
+}
+.section3 .main .select .btn{
+    position: absolute;
+    bottom: 10px;
+}
+.section3 .main .select .btn-a{
+    opacity: 0;
+}
+.select .img-01{
+    position: absolute;
+    top: 0;
+}
+.select  .img-01-a{
+    opacity: 0;
+}
+/* 沙发 */
+.section3 .shirt-03,
+.t1f{
+    display: none;
+    position: absolute;
+    left: 115px;
+    bottom: 200px;
+    z-index: 6;
+}
+
+/* 第三屏幕  end*/
+
+/* 第四屏幕  end*/
+
+.section4{
+    background: #fed url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+    z-index: 0;
+}
+.cloud{
+    position: absolute;
+    bottom: 550px;
+    left: 50%;
+}
+.words-04{
+    position: absolute;
+    bottom: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.words-04-a{
+    opacity: 0;
+}
+
+.car{
+    position: absolute;
+    width: 500px;
+    /* background-color: pink; */
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+.car .car-img1{
+    z-index: 3;
+}
+.car-img{
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    display: none;
+}
+.note{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: pink;
+    bottom: 180px;
+    opacity: 0;
+}
+.note-img{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    opacity: 0;
+}
+/* 第四屏幕  end*/
+
+/* 第五屏幕  start*/
+
+.section5{
+    background: #d04759 url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+    /* overflow: hidden; */
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    z-index: 2;
+}
+.words-05{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    opacity: 0;
+}
+
+.card-05{
+    position: absolute;
+    bottom: 200px;
+    left: 20%;
+    z-index : 10;
+}
+.order-05{
+    position: absolute;
+    bottom: 270px;
+    left: 27%;
+}
+.t1f-05{
+    position: absolute;
+    bottom: 1200px;
+    left: 25%;
+    opacity: 0;
+}
+.mouse-05{
+    position: absolute;
+    right: 20%;
+    bottom: 200px;
+}
+.mouse-05-a{
+    opacity: 0;
+}
+.hand-05{
+    position: absolute;
+    right: 24%;
+    bottom: -375px;
+}
+.overFlow{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* 第五屏幕  end*/
+
+
+/* 第六屏幕  start*/
+
+
+.section6{
+    background: #84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+
+    z-index: 0;
+}
+
+.box-06{
+    position: absolute;
+    left: 123px;
+    bottom: 500px;
+    z-index: 50;
+}
+.car-06{
+    position: absolute;
+    right: 50%;
+    bottom: 0px;
+    z-index: 60;
+}
+.cloud-06{
+    position: absolute;
+    bottom: 550px;
+    left: 50%;
+    animation: cloud6 100s infinite;
+}
+
+.pop-06{
+    position: absolute;
+    bottom: 119px;
+    right: 48%;
+    opacity: 0;
+}
+.man-06{
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    height: 100px;
+    /* opacity: 0; */
+}
+.women-06{
+    position: absolute;
+    
+    bottom: 116px;
+    right: 315px;
+    height: 123px;
+    /* opacity: 0; */
+    z-index: 50;
+    opacity: 0;
+}
+.door-06{
+    position: absolute;
+    right: 285px;
+    bottom: 116px;
+    opacity: 0;
+}
+.popp-06{
+    position: absolute;
+    right: 445px;
+    bottom: 400px;
+    z-index: 60;
+    opacity: 0; 
+}
+.words-06{
+    position: absolute;
+    left: 10%;
+    bottom: 479px;
+    display: none;
+}
+/* 第六屏幕  end*/
+
+
+
+/* 第7屏幕  start*/
+.section7{
+    background: #8ac060 url(../images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 50% 100%;
+}
+.star{
+    position: absolute;
+    left: 50%;
+    bottom: 439px;
+    margin-left: -295px;
+    width: 0;
+    height: 20px;
+    background: url(../images/star.png) no-repeat;
+    background-size: 97px;
+
+}
+.good-07{
+    position: absolute;
+    width: 144px;
+    bottom: 382px;
+    left: 50%;
+    margin-left: -289px;
+    opacity: 0;
+}
+
+/* 第7屏幕  end*/
+
+/* 第8屏幕  start*/
+.section8{
+    background: url(../images/ksgw.png);
+}
+.beginShoping{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 365px;
+}
+.btn-08-a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    cursor: pointer;
+}
+.again-08{
+    position: absolute;
+    bottom: 403px;
+    left: 50%;
+    margin-left: 240px;
+    cursor: pointer;
+}
+.hand-08{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+/* 第8屏幕  end*/
+
+/* start直接进去购物中心 */
+
+.go{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 5;
+}
+.next{
+    position: fixed;
+    bottom: 120px;
+    right: 10%;
+    z-index: 999;
+}
+/* end */
+
+/* 动画组 */
+
+.updown{
+    animation: fly 3s linear infinite;
+}
+.shirt-updown{
+    animation: shirt01 2.5s linear infinite;
+}
+@keyframes fly{
+    0%{
+        top : 10%
+    }
+    50%{
+        top: 20%;
+    }
+    100%{
+        top: 10%;
+    }
+}
+@keyframes shirt01{
+
+    50%{
+        bottom: 360px;
+    }
+    100%{
+        bottom: 350px;
+    }
+}
+/* 云彩第一组 */
+
+.cloud-back1{
+    animation: cloud 100s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        left: 50%;
+    }
+    50%{
+        left: -10%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+/* 第五屏幕的字体 */
+.words-05-a{
+    animation: words5 3s forwards;
+}
+@keyframes words5{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg) translateZ(100px);
+    }
+}
+
+@keyframes cloud6{
+    50%{
+        left: 10%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+
+/* next */
+.next_updown{
+    animation: next 1.5s linear infinite;
+}
+
+@keyframes next{
+    50%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 120px;
+    }
+}
